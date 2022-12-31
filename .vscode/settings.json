@@ -1,0 +1,14 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "command-runner.commands": {
+        "Open: SES": "emStudio SES/${config:SES_PROJECT_NAME}.emProject &",
+        "Open: RTT Viewer": "JLinkRTTViewer &"
+    },
+    "doxdocgen.generic.authorEmail": "Viacheslav@mcublog.ru",
+    "doxdocgen.generic.authorName": "Viacheslav",
+    "doxdocgen.file.copyrightTag": [
+        "@copyright Viacheslav Copyright (c) {year}"
+    ],
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Microsoft, ColumnLimit: 90, IndentWidth: 4}",
+    "diffEditor.ignoreTrimWhitespace": false
+}
