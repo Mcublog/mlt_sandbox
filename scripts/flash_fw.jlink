@@ -1,0 +1,12 @@
+if SWD
+speed 4000
+Device STM32l052RG
+Con
+erase
+r
+h
+loadfile build/targets/sanbox_fw.hex
+r
+h
+g
+q
