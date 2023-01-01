@@ -72,6 +72,7 @@ set(L052_LINKER_OPTION
     -fno-exceptions
     -fno-rtti
     -Wl,--end-group
+    -Wl,--gc-sections # removed unused functions
     -Wl,--print-memory-usage
 )
 # endregion
