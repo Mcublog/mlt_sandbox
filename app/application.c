@@ -26,7 +26,7 @@
  */
 void application_run(void)
 {
-    LOG_INFO("app v%s run", FW_VERSION);
+    LOG_INFO("v%s run", FW_VERSION);
 
     while(1)
     {
