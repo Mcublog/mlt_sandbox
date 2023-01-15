@@ -3,6 +3,7 @@ set(L052_TARGET               sandbox_fw)
 
 # region HAL
 set(HAL_INCLUDE_DIRS
+    ${L052_TARGET_PATH}/
     ${L052_TARGET_PATH}/Drivers/STM32L0xx_HAL_Driver/Inc
     ${L052_TARGET_PATH}/Drivers/CMSIS/Device/ST/STM32L0xx/Include
     ${L052_TARGET_PATH}/Drivers/CMSIS/Include

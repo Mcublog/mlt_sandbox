@@ -1,11 +1,11 @@
 if SWD
 speed 4000
-Device STM32l052RG
+Device STM32l052C8
 Con
 erase
 r
 h
-loadfile build/targets/sanbox_fw.hex
+loadfile build/targets/stm32l0xx/sandbox_fw.hex
 r
 h
 g

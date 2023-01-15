@@ -22,6 +22,19 @@
 			"group": "build",
 			"problemMatcher": [],
 			"detail": "CMake template clean rebuild task"
-		}
+		},
+		{
+			"type": "shell",
+			"label": "Flash: fw",
+			"command": "JLink",
+			"dependsOn": [
+				"CMake: sandbox fw"
+			],
+			"args": [
+				"-CommanderScript",
+				"scripts/flash_fw.jlink"
+			],
+			"group": "test"
+		},
 	]
 }

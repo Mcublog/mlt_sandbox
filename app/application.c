@@ -30,6 +30,7 @@ void application_run(void)
 
     while(1)
     {
-
+        LOG_INFO("Tick...");
+        HAL_Delay(1000);
     }
 }
