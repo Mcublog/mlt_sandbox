@@ -10,21 +10,6 @@ set(HAL_INCLUDE_DIRS
 )
 # endregion
 
-# region RTT
-set(RTT_LIB rtt)
-set(RTT_VERSION SEGGER_RTT_V762c)
-set(RTT_DIR ${LIBS_DIR}/${RTT_VERSION})
-set(RTT_INCLUDE_DIRS
-    ${RTT_DIR}/Config
-    ${RTT_DIR}/RTT)
-# Add sources
-file(GLOB_RECURSE RTT_SOURCES
-    ${RTT_DIR}/RTT/*.c
-    ${RTT_DIR}/RTT/*.S
-    ${RTT_DIR}/Syscalls/SEGGER_RTT_Syscalls_GCC.c
-)
-# endregion
-
 # Put here your symbols (preprocessor defines), one in each line
 # Encapsulate them with double quotes for safety purpose
 set(DEFINES
