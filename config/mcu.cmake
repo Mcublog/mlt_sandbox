@@ -42,7 +42,7 @@ set(CPU_PARAMETERS -mthumb
 
 set(ARM_NONE_EABI_FLAGS
     ${CPU_PARAMETERS}
-    -flto
+    # -flto
     -Wall
     -Wextra
     -Wpedantic
