@@ -26,7 +26,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "app/application.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -93,7 +93,7 @@ int main(void)
   MX_I2C2_Init();
   MX_ADC_Init();
   /* USER CODE BEGIN 2 */
-
+  application_run();
   /* USER CODE END 2 */
 
   /* Infinite loop */

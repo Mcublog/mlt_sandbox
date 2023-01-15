@@ -11,6 +11,7 @@ set(IO_DIR      ${APP_DIR}/io)
 set(LIBS_DIR    ${PROJECT_SOURCE_DIR}/libs)
 
 set(APP_DIRS
+    ${PROJECT_SOURCE_DIR}
     ${APP_DIR}
     ${DEBUG_DIR}
     ${UTILS_DIR}
