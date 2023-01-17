@@ -10,6 +10,7 @@
  */
 #include "app/application.h"
 #include "app/version.h"
+#include "app/utils/delay.h"
 //>>---------------------- Log control
 #define LOG_MODULE_NAME app
 #if defined(NDEBUG)
@@ -26,11 +27,11 @@
  */
 void application_run(void)
 {
-    LOG_INFO("app v%s run", FW_VERSION);
+    LOG_INFO("v%s run", FW_VERSION);
 
     while(1)
     {
         LOG_INFO("Tick...");
-        HAL_Delay(1000);
+        delay_ms(1000);
     }
 }
