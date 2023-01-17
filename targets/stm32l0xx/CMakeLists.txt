@@ -5,7 +5,6 @@ include(${PROJECT_SOURCE_DIR}/config/mcu.cmake)
 file(GLOB_RECURSE HAL_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/*.c
     ${CMAKE_CURRENT_SOURCE_DIR}/*.s
-
 )
 
 file(GLOB_RECURSE APP_SOURCES ${APP_DIR}/*.c)
