@@ -32,7 +32,7 @@ add_subdirectory(config)
 add_subdirectory(targets)
 
 # region Tests
-# message("******* [Unit test list] *******")
-# enable_testing()
-# add_subdirectory(test)
+message("******* [Unit test list] *******")
+enable_testing()
+add_subdirectory(test)
 # endregion
