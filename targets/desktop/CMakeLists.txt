@@ -1,6 +1,7 @@
 include(${PROJECT_SOURCE_DIR}/config/common.cmake)
 include(${PROJECT_SOURCE_DIR}/config/desktop.cmake)
 
+set(CMAKE_C_COMPILER ${GCC_DESKTOP})
 # Add sources
 file(GLOB_RECURSE DESKTOP_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/*.c
