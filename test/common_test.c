@@ -10,6 +10,7 @@
  */
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
 //>>---------------------- Log control
 #define LOG_MODULE_NAME common_types_test
