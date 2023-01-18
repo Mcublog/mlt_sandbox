@@ -13,7 +13,7 @@
 #include <stdlib.h>
 
 //>>---------------------- Log control
-#define LOG_MODULE_NAME common_types_test
+#define LOG_MODULE_NAME common_test
 #if defined(NDEBUG)
 #define LOG_MODULE_LEVEL (0)
 #else
