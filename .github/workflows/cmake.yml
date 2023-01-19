@@ -2,7 +2,8 @@ name: CI
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ master ]
+    # branches: [ develop ]
 jobs:
   test-job:
     runs-on: ubuntu-latest
@@ -45,4 +46,3 @@ jobs:
           name: mlt-sandbox
           path: |
             build/targets/stm32l0xx/sandbox_fw
-            build/targets/desktop/sandbox_desktop
