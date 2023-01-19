@@ -10,6 +10,10 @@
  */
 #include "app/application.h"
 
+/**
+ * @brief Desktop entry point
+ *
+ */
 void main(void)
 {
     application_run();
