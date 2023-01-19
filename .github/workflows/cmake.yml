@@ -15,7 +15,7 @@ jobs:
       - name: GCC version
         run: gcc --version
       - name: Configure
-        run: mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=gcc ..
+        run: mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=arm-none-eabi-gcc ..
       - name: Build and Run Tests
         run: cd build && make all && ctest --output-junit results.xml
       - name: Publish Test Report
