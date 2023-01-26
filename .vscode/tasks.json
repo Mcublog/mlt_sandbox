@@ -3,22 +3,16 @@
 	"tasks": [
 		{
 			"type": "cmake",
-			"label": "CMake: sandbox fw",
+			"label": "CMake: build",
 			"command": "cleanRebuild",
-			"targets": [
-				"sandbox_fw"
-			],
 			"group": "build",
 			"problemMatcher": [],
 			"detail": "CMake template build task"
 		},
 		{
 			"type": "cmake",
-			"label": "CMake: sandbox fw rebuild",
+			"label": "CMake: rebuild",
 			"command": "cleanRebuild",
-			"targets": [
-				"sandbox_fw"
-			],
 			"group": "build",
 			"problemMatcher": [],
 			"detail": "CMake template clean rebuild task"
@@ -28,7 +22,7 @@
 			"label": "Flash: fw",
 			"command": "JLink",
 			"dependsOn": [
-				"CMake: sandbox fw"
+				"CMake: build"
 			],
 			"args": [
 				"-CommanderScript",
