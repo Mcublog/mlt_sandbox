@@ -11,6 +11,7 @@
 #include "app/application.h"
 #include "app/version.h"
 #include "app/utils/delay.h"
+#include "libs/w25qxx/w25qxx.h"
 //>>---------------------- Log control
 #define LOG_MODULE_NAME app
 #if defined(NDEBUG)
@@ -28,6 +29,10 @@
 void application_run(void)
 {
     LOG_INFO("v%s run", FW_VERSION);
+
+    bool res = W25qxx_Init();
+    if (res == false)
+        LOG_ERROR("W25qxx_Init");
 
     while(1)
     {

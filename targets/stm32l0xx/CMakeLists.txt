@@ -9,8 +9,10 @@ file(GLOB_RECURSE HAL_SOURCES
 
 file(GLOB_RECURSE APP_SOURCES ${APP_DIR}/*.c)
 
+file(GLOB_RECURSE W25Q_SOURCES ${PROJECT_SOURCE_DIR}/libs/w25qxx/*.c)
+
 # Build lib
-add_executable(${L052_TARGET} ${HAL_SOURCES} ${APP_SOURCES} ${RTT_SOURCES})
+add_executable(${L052_TARGET} ${HAL_SOURCES} ${APP_SOURCES} ${RTT_SOURCES} ${W25Q_SOURCES})
 
 # Include paths
 target_include_directories(${L052_TARGET} PRIVATE ${HAL_INCLUDE_DIRS} ${APP_DIRS} ${RTT_INCLUDE_DIRS})
