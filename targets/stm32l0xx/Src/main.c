@@ -22,10 +22,12 @@
 #include "i2c.h"
 #include "rtc.h"
 #include "spi.h"
+#include "tim.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <stdio.h>
 #include "app/application.h"
 /* USER CODE END Includes */
 
@@ -92,7 +94,10 @@ int main(void)
   MX_SPI2_Init();
   MX_I2C2_Init();
   MX_ADC_Init();
+  MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
+  tim6_init();
+
   application_run();
   /* USER CODE END 2 */
 

@@ -36,7 +36,7 @@ void application_run(void)
 
     while(1)
     {
-        LOG_INFO("Tick...");
+        // LOG_INFO("Tick...");
         delay_ms(1000);
     }
 }
